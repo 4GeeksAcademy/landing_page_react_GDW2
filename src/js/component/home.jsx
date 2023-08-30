@@ -1,15 +1,24 @@
 import React from "react";
+import PageNavbar from "./navbar";
+import PageJumbotron from "./jumbotron";
+import PageCardContainer from "./cardContainer";
+import PageFooter from "./footer";
 
-//include images into your bundle
-// import rigoImage from "../../img/rigo-baby.jpg";
-
-import Foo from "./component/Foo.jsx"
-
-//create your first component
 const Home = () => {
-	return <Foo/>
-	
-	// return (
+	return (
+		<>
+		<PageNavbar/>
+		<PageJumbotron/>
+		<PageCardContainer/>
+		<PageFooter/>
+		</>
+	)
+};
+
+export default Home;
+
+
+// return (
 	// 	<div className="text-center">
 	// 		<h1 className="text-center mt-5">Hello Rigo!</h1>
 	// 		<p>
@@ -25,6 +34,3 @@ const Home = () => {
 	// 		</p>
 	// 	</div>
 	// );
-};
-
-export default Home;
